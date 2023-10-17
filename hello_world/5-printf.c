@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-/*
- *main - printf prints a specific text
+/**
+ *main - print a specific text
  *Return: 0
  */
 
