@@ -14,10 +14,10 @@ void times_table(void);
 int add(int, int);
 void print_to_98(int n);
 int _isupper(int c);
-int _isdigit(ini c);
+int _isdigit(int c);
 void print_triangle(int size);
 void print_square(int size);
-void print_diagonal(init n);
+void print_diagonal(int n);
 void print_line(int n);
 void more_numbers(void);
 int mul(int a, int b)
