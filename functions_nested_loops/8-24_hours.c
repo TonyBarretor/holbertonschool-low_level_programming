@@ -3,6 +3,7 @@
 /**
  * print_digit - int digit
  * @digit: the char
+ * jack_bauer - its a name
  * Description: chec
  * Return: 1 if c
  */

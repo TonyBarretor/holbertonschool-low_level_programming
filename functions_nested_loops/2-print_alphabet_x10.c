@@ -1,5 +1,5 @@
 /**
- * main - putchar prints lettter by letter
+ * print_alphabet_x10 - putchar prints lettter by letter
  *Return: what it mention in main.h
  */
 
