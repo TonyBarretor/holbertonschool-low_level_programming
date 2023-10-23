@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * _isalpha - int
- * @c: the char
+ * add - int, int
+ * @x: the char
+ * @y: other num
  * Description: chec
- * Return: 1 if c
+ * Return: res if c
  */
 int add(int x, int y)
 {

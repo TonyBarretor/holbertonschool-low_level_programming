@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _isalpha - int
- * @c: the char
+ * print_sign - int n
+ * @n: the char
  * Description: chec
  * Return: 1 if c
  */
