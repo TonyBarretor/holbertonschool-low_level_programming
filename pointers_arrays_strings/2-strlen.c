@@ -6,11 +6,15 @@
 
 #include "main.h"
 
-int strlen(char *s);
+int _strlen(char *s)
 {
-	int lenght = 0;
+	int length = 0;
 
-	for (; [length] != '\0'; length++);
+	while (*s != 0)
+	{
+		length++;
+		s++;
+	}
 
 	return length;
 
