@@ -1,9 +1,10 @@
 /**
- *main - fjghnkafdgafof 
- *@argc: dlgfjadlfa
- * @argv: lijgl
- * Return: kjdflaf
+ * main - jldjald
+ * @argc: ldasfjald
+ * @argv: falkdjfald
+ * Return: adlkjflad
  */
+
 #include <stdio.h>
 
 int main(int argc __attribute__((unused)), char *argv[])
