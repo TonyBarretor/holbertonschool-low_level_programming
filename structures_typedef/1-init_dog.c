@@ -1,8 +1,8 @@
 /**
  * init_dog - initiañize the variables of struc dog
- * @dog: dog
  * @name: name of dog
  * @age: age of the dog
+ * @d: pointer to receive
  * @owner: name of owner
  * Return: 0
  */
@@ -13,6 +13,9 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
+	if (d == NULL)
+		return;
+
 	(*d).name = name;
 	(*d).owner = owner;
 	(*d).age = age;
