@@ -4,28 +4,28 @@
 #include <string.h>
 
 dog_t *new_dog(char *name, float age, char *owner) {
-    dog_t *new_dog = malloc(sizeof(dog_t));
+    dog_t *my_dog = malloc(sizeof(dog_t));
 
-    if (new_dog == NULL) {
+    if (my_dog == NULL) {
         return NULL;
     }
 
-    new_dog->name = malloc(strlen(name) + 1);
-    if (new_dog->name == NULL) {
-        free(new_dog);
+    my_dog->name = malloc(strlen(name) + 1);
+    if (my_dog->name == NULL) {
+        free(my_dog);
         return NULL;
     }
-    strcpy(new_dog->name, name);
+    strcpy(my_dog->name, name);
 
-    new_dog->owner = malloc(strlen(owner) + 1);
-    if (new_dog->owner == NULL) {
-        free(new_dog->name);
-        free(new_dog);
+    my_dog->owner = malloc(strlen(owner) + 1);
+    if (my_dog->owner == NULL) {
+        free(my_dog->name);
+        free(my_dog);
         return NULL;
     }
-    strcpy(new_dog->owner, owner);
+    strcpy(my_dog->owner, owner);
 
-    new_dog->age = age;
+    my_dog->age = age;
 
-    return new_dog;
+    return my_dog;
 }
