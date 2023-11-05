@@ -5,7 +5,8 @@
  * op_div - divide
  * op_mod - divide having de residuos
  * @a: number
- * @b: number
+ * @b: numbe
+ * Return: different
  */
 
 #include "3-calc.h"
