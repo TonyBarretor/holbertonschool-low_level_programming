@@ -1,3 +1,13 @@
+/**
+ * op_add - addtion
+ * op_sub - sunstraction
+ * op_mul - multiplyes
+ * op_div - divide
+ * op_mod - divide having de residuos
+ * @a: number
+ * @b: number
+ */
+
 #include "3-calc.h"
 
 int op_add(int a, int b)
@@ -17,7 +27,7 @@ int op_mul(int a, int b)
 
 int op_div(int a, int b)
 {
-	if(b == 0)
+	if (b == 0)
 	{
 		printf("Error\n");
 		exit(100);
