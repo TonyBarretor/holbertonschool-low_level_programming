@@ -16,6 +16,10 @@ int op_add(int a, int b)
 	return (a + b);
 }
 
+/**
+ * op_sub - subtraction
+ */
+
 int op_sub(int a, int b)
 {
 	return (a - b);
