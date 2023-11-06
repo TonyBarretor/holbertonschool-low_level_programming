@@ -1,6 +1,7 @@
 /**
  * sum_them_all - summ all numbers
  * @n: number
+ * Return: sum
  */
 
 #include "variadic_functions.h"

@@ -11,31 +11,26 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	char *str;
-	int i = 0;
-	char current_format;
+	int i = -1;
+	char *separator = "";
 
 	va_start(args, format);
 
-	while (format && format[i])
+	while (format && format[++i])
 	{
-		current_format = format[i++];
-
-		if (current_format == 'c')
-			printf("%c", (char)va_arg(args, int));
-		else if
-			(current_format == 'i') printf("%d", va_arg(args, int));
-		else if
-			(current_format == 'f') printf("%f", (float)va_arg(args, double));
-		else if
-			(current_format == 's')
+	(format[i] == 'c') && printf("%s%c", separator, va_arg(args, int))
+		&& (separator = ", ");
+	(format[i] == 'i') && printf("%s%d", separator, va_arg(args, int))
+		&& (separator = ", ");
+	(format[i] == 'f') && printf("%s%f", separator, va_arg(args, double))
+		&& (separator = ", ");
+		if (format[i] == 's')
 		{
-			str = va_arg(args, char *);
-			printf("%s", (str == NULL) ? "(nil)" : str);
-		}
+			char *str = va_arg(args, char *);
 
-		if (format[i])
-			printf(", ");
+			printf("%s%s", separator, (str != NULL) ? str : "(nil)");
+			separator = ", ";
+		}
 	}
 
 	printf("\n");
